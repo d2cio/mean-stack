@@ -47,6 +47,9 @@ services:
       ME_CONFIG_BASICAUTH_PASSWORD: null
       VCAP_APP_HOST: 0.0.0.0
       VCAP_APP_PORT: 8081
+    comments:
+      env:
+        ME_CONFIG_BASICAUTH_PASSWORD: Password for an admin account in Mongo-express
     deployTo:
       - app
 
