@@ -2,7 +2,7 @@ version: '1.0'
 services:
   - name: mongo
     type: mongodb
-    version: 3.6
+    version: 4.0
     configuration: StandAlone
     password: null
     ports:
@@ -13,7 +13,7 @@ services:
 
   - name: app
     type: nodejs
-    version: 8
+    version: 10
     source: null
     localDeps: null
     globalDeps: null
@@ -27,7 +27,7 @@ services:
 
   - name: dbman
     type: nodejs
-    version: 8
+    version: 10
     ports:
       - 8081
     source:
@@ -55,7 +55,7 @@ services:
 
   - name: proxy
     type: nginx
-    version: 1.14
+    version: 1.15
     ports:
       - 80
       - 443
